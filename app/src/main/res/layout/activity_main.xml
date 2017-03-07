@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    tools:context="com.dirigendo.mybusiness.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/business_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Dirigendo Ltd." />
+
+    <ImageView
+        android:id="@+id/address"
+        android:src="@drawable/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/business_name"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/address_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/address"
+        android:layout_below="@id/business_name"
+        android:layout_marginLeft="8dp"
+        android:autoLink="web"
+        android:text="Address/Street" />
+
+    <TextView
+        android:id="@+id/address_first_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/address"
+        android:layout_below="@id/address_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="268-282 Waterloo Road, SE1 8RQ" />
+
+    <TextView
+        android:id="@+id/address_second_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/address"
+        android:layout_below="@id/address_first_line"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="London, United Kingdom" />
+
+
+    <ImageView
+        android:id="@+id/phone"
+        android:src="@drawable/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_second_line"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/phone"
+        android:layout_below="@id/address_second_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Phone number" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/phone"
+        android:layout_below="@id/phone_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="+34 691556690" />
+
+
+
+    <ImageView
+        android:id="@+id/website"
+        android:src="@drawable/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/website_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/website"
+        android:layout_below="@id/phone_number"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Website" />
+
+    <TextView
+        android:id="@+id/website_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_toRightOf="@id/phone"
+        android:layout_below="@id/website_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="www.dirigendo.com" />
+
+    <TextView
+        android:id="@+id/business_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@id/website_address"
+        android:layout_margin="16dp"
+        android:text="Dirigendo Ltd. is the smallest fintech company in the world. With only one employee, this company has successfully dreamed more than 1000+ ideas." />
+
+
+</RelativeLayout>
+</ScrollView>
